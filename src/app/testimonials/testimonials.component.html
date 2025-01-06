@@ -1,0 +1,13 @@
+<article class="barlow-semi-condensed">
+  @for (testimonial of testimonials; track $index) {
+  <section>
+    <div>
+      <img src="{{testimonial.avatar}}" alt="{{testimonial.name}}-avatar" width="28" height="28">
+      <h1 class="name-font">{{testimonial.name}}</h1>
+      <h2 class="status-font">{{testimonial.status}}</h2>
+    </div>
+    <p class="comment comment-font">{{testimonial.comment}}</p>
+    <p class="intro intro-font">{{testimonial.intro}}</p>
+  </section>
+  }
+</article>
